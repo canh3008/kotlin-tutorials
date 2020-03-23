@@ -3,13 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/btn_first"
+    <EditText
+    android:id="@+id/tv_random1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Giá trị Min"
+    android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/tv_random3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/tv_random2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhấp vào đây"/>
+        android:hint="Giá trị Max"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Random"
+        android:textSize="50dp"/>
 
 
 </LinearLayout>
